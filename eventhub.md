@@ -1,0 +1,12 @@
+# Event Hub
+- receive data
+- AMQP opens persistent socket to send multiple messages
+- default 4 partitions
+- publisher -> event hub -> subscriber
+- event 1MB
+- define namespace, then create eventhub in that namespace
+- opt properties, enable kafka, zone redundant, enable auto inflate and auto inflate max throughput units
+- az eventhub namespace
+- send to eventhub: namespace, name, policy name, shared access key
+- receive: namespace, name, policy name, access key, account name, conn, container name
+- metrics : throttled requests, active connections, i/o bytes
